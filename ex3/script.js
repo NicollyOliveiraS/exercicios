@@ -1,10 +1,7 @@
 document.getElementById("calcular").addEventListener("click", function () {
     const quantidadeFuncionarios = parseInt(document.getElementById("colaboradores").value);
     const quantidadeDias = parseInt(document.getElementById("dias").value);
-    if (quantidadeFuncionarios <= 0 || quantidadeDias <= 0){
-        alert ('O salário deve ser maior que zero.');
-                return;
-    }
+  
     let valorTransporte = 0;
 
     if (quantidadeFuncionarios >= 1 && quantidadeFuncionarios <= 49) {

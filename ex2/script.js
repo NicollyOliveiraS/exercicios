@@ -1,10 +1,7 @@
 document.getElementById('calcular').addEventListener('click', function() {
             const salarioInput = document.getElementById('salario');
             const salario = parseFloat(salarioInput.value);
-            if (salario <= 0) {
-                alert('O salário deve ser maior que zero.');
-                return;
-            }
+           
             let aumento = 0;
             if (salario <= 1200) {
                 aumento = salario * 0.16;
