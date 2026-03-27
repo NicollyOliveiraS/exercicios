@@ -3,104 +3,119 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Fundo */
 body {
-    height: 100vh;
+    background: linear-gradient(135deg, #e0f0ff 0%, #d2e5f5 100%);
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #c6d9e9, #c0f1d0);
+    padding: 1rem;
 }
+
 .container {
-    position: relative; /* IMPORTANTE */
-}
-/* Caixa principal */
-.container {
-    background: #fff;
-    padding: 30px;
-    border-radius: 16px;
-    width: 320px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(2px);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     text-align: center;
 }
 
-/* Título */
 h1 {
-    margin-bottom: 20px;
-    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e66;
+    border-left: 5px solid #7c9bcb;
+    padding-left: 1rem;
+    text-align: left;
 }
 
-/* Label */
 label {
     display: block;
     text-align: left;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
+    font-weight: 600;
+    color: #4a627a;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
 }
 
-/* Input */
 input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #cbdbe0;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
     outline: none;
-    transition: 0.3s;
+    background: #ffffff;
 }
 
 input:focus {
-    border-color: #4facfe;
+    border-color: #7c9bcb;
+    box-shadow: 0 0 0 3px rgba(124, 155, 203, 0.2);
 }
-/* Botão de sair */
+
 .btn-voltar {
     display: inline-block;
-    margin-bottom: 15px;
-    padding: 10px 16px;
-    background: #79b0f7;
-    color: white;
+    margin-bottom: 1.5rem;
+    background: #eef2f7;
+    color: #5a6e8a;
     text-decoration: none;
-    border-radius: 8px;
-    font-size: 14px;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
     font-weight: bold;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
-/* Hover */
 .btn-voltar:hover {
-    background: #3c73c0;
-    transform: scale(1.05);
+    background: #e2e8f0;
+    transform: scale(1.02);
 }
 
-/* Clique */
-.btn-voltar:active {
-    transform: scale(0.95);
-}
-
-/* Botão */
 button {
     width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background: #4facfe;
+    padding: 0.8rem;
+    background: #7c9bcb;
     color: white;
-    font-size: 16px;
+    border: none;
+    border-radius: 0.75rem;
+    font-weight: bold;
+    font-size: 1rem;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
 }
 
 button:hover {
-    background: #3a8be0;
+    background: #5f7ea5;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Resultado */
-p {
-    margin-top: 15px;
+#resultado {
+    margin-top: 1.5rem;
     font-weight: bold;
-    color: #333;
+    font-size: 1.2rem;
+    color: #2d6a4f;
+    background: #eaf9ed;
+    padding: 0.8rem;
+    border-radius: 0.75rem;
+    word-break: break-word;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
 }
