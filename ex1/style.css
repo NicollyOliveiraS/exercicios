@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #cadcf4, #dcf8e6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    position: relative; /* IMPORTANTE */
+}
+/* Caixa principal */
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+}
+
+label {
+    font-size: 14px;
+    color: #374151;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #3b82f6;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 12px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="button"]:hover {
+    background: #2563eb;
+}
+.btn-voltar {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 10px 16px;
+    background: #87b4f5;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover */
+.btn-voltar:hover {
+    background: #0081cc;
+    transform: scale(1.05);
+}
+
+/* Clique */
+.btn-voltar:active {
+    transform: scale(0.95);
+}
+#resultado {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #16a34a;
+}

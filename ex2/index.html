@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Aumento de Salário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Crie um programa para atender a necessidade abaixo:
+O gestor deverá informar o salário de um funcionário e o software calcular o valor do
+aumento conforme regra abaixo:
+
+• Salários até R$ 1.200,00: aumento de 16%.
+• Salários de R$ 1.200,01 até R$ 2.100,00: aumento de 13%.
+• Salários de R$ 2.100,01 até R$ 3.000,00: aumento de 10%.
+• Salários acima de R$ 3.000,00: aumento de 5%.
+
+Exiba o novo salário após o aumento. -->
+   
+    <div class="container">
+        <a href="../index.html" class="btn-voltar">Voltar</a>
+        <h1>Aumento de Salário</h1>
+
+        <label for="salario">Salário atual</label>
+        <input type="number" id="salario" placeholder="Digite o salário">
+
+        <button id="calcular">Calcular Aumento</button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
