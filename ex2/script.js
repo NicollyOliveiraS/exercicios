@@ -3,7 +3,10 @@ document.getElementById('calcular').addEventListener('click', function() {
             const salario = parseFloat(salarioInput.value);
            
             let aumento = 0;
-            if (salario <= 1200) {
+            if (salario <= 0) {
+                alert("Digite um salário válido");
+                return;
+            } else if (salario <= 1200) {
                 aumento = salario * 0.16;
             } else if (salario > 1200 && salario <= 2100) {
                 aumento = salario * 0.13;

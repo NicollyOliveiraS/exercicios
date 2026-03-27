@@ -3,8 +3,9 @@ document.getElementById("calcular").addEventListener("click", function () {
     const quantidadeDias = parseInt(document.getElementById("dias").value);
   
     let valorTransporte = 0;
-
-    if (quantidadeFuncionarios >= 1 && quantidadeFuncionarios <= 49) {
+    if (quantidadeFuncionarios <= 0 || quantidadeDias <= 0) {
+        alert ("Digite valores válidos")}
+    else if (quantidadeFuncionarios >= 1 && quantidadeFuncionarios <= 49) {
         valorTransporte = 4.50;
     } else if (quantidadeFuncionarios >= 50 && quantidadeFuncionarios <= 99) {
         valorTransporte = 4.10;
